@@ -98,7 +98,7 @@ def main(image_file):
                 if not result:	#If no path is found;
                     pathPlanned[start_image] = list(["NO PATH",[], 0])
                 
-                pathPlanned[start_image] = list([str(grid),result,len(result)+1])
+                pathPlanned[start_image] = list([str(grid),result,len(result)])
     
     for obj in list_coloured_grids:
         if  obj not in pathPlanned:	#If no matched object is found;
